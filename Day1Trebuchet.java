@@ -2,6 +2,8 @@
 // Need to strip away everything but the first and last digit in a string.
 // Need to read the text file puzzle
 
+// LESSON LEARNED: Carefully read prompt requirements, it's very easy to start coding a solution for the wrong problem.
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
