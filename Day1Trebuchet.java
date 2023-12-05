@@ -17,10 +17,11 @@ public class Day1Trebuchet {
 
             while(scnr.hasNextLine()) {
                 String line = scnr.nextLine();
+                
                 // perform string manipulation and start storing array of digits to summate
                 int digits = stringToInt(line);
                 sum += digits;
-                System.out.println(sum);
+                
 
             }
 
@@ -29,7 +30,6 @@ public class Day1Trebuchet {
             System.out.println("Error Occurred");
             e.printStackTrace();
         }
-
         return sum;
     }
 
@@ -55,17 +55,26 @@ public class Day1Trebuchet {
         while (wrapArray.size() > 2) {
             
                 wrapArray.remove(1);
+
             }
+        // If the array is only 1 digit, add a copy to the end so that there is always two-digit number
+         if (wrapArray.size() < 2) {
+                    Character lastDigit = wrapArray.get(0);
+                    wrapArray.add(lastDigit);
+                    System.out.println(wrapArray);
+                }
         
         String stringDigit = "";
         // Now that the array is clean, convert to integer and add to sum
         for ( Character ch : wrapArray) {
            stringDigit = stringDigit + Character.toString(ch);
+           
         }
 
         
-        
+        System.out.println(stringDigit);
         int digits = Integer.parseInt(stringDigit);
+        
         
         
 
