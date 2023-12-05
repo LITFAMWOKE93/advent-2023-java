@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Day1Trebuechet {
+public class Day1Trebuchet {
     // highly coupled, but I'm still learning
 
     public static int readFile(int sum, String filename){
